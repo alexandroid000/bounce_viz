@@ -3,7 +3,8 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = uv run sphinx-build
+SPHINXAPIDOC  = uv run sphinx-apidoc
 SPHINXPROJ    = BounceVisualization
 SOURCEDIR     = source
 BUILDDIR      = build
@@ -22,7 +23,7 @@ help:
 apidoc: clean
 	@rm -f ./source/*rst*
 	@echo "Removing all .rst files under 'source'..."
-	@sphinx-apidoc -o ./source/ ../../bounce_viz
+	@$(SPHINXAPIDOC) -o ./source/ ../../bounce_viz
 	@rm -f ./source/modules.rst
 	@find ./source -name '*.rst' -type f -exec vim -c '%s/^\([a-zA-Z0-9\_]\+[.]\)*\([a-zA-Z0-9\_]\+\) \(module\|package\)/\2/g' -c 'wq' -- {} \;
 	@make -j html 

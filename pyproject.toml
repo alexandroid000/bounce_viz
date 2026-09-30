@@ -21,6 +21,8 @@ dependencies = [
     "pyqt5-sip>=12.19.0",
     "python-dateutil>=2.9.0.post0",
     "six>=1.17.0",
+    "sphinx>=9.0.4",
+    "sphinx-rtd-theme>=3.1.0",
     "swig>=4.5.0",
     "visilibity>=1.0.10",
 ]
