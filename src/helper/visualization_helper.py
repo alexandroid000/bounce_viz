@@ -1,4 +1,4 @@
-from maps import *
+from environments.maps import *
 from settings import *
 from helper.geometry_helper import *
 from helper.shoot_ray_helper import ShootRaysFromReflex, ShootRaysToReflexFromVerts
