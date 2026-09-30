@@ -2,31 +2,35 @@
 A collection of python utilities for visibility-based decomposition of 
 polygons, and strategy generation for mobile "bouncing" robots.
 
-## Installation and Setup for macOS
+## Installation and Setup
 
-1. Clone this repository into $bounce_viz:
+1. Clone this repository with submodules:
 
    ```bash
-   export bounce_viz=/desired/absolute/path/to/bounce_viz/ # set absolute path as desired, no space around "="
-   git clone --recurse-submodules git@github.com:alexandroid000/bounce_viz.git $bounce_viz
+   git clone --recurse-submodules https://github.com/alexandroid000/bounce_viz.git
    ```
 
-2. Install Python 3.6
-   ```bash
-   brew install python
-   ```
-3. Install all other python libraries specified above
+2. Make sure you have Python
+
+3. Install python library dependencies
+
    ```bash
    pip3 install -r requirements.txt
    ```
-   (requirements.txt is a file in the root directory of this project.)
+    requirements.txt is a file in the root directory of this project. You can
+    also use this list to install manually or convert to the python package manager
+    of your choice.
+
 ## Quick Start
+
    ```bash
    cd $bounce_viz
    cd test
    ./run_sim.py
    ```
+
 ## Generate Documentations
+
    ```bash
    cd $bounce_viz
    cd docs

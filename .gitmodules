@@ -1,7 +1,3 @@
-
-[submodule "papers/--name"]
-	path = papers/--name
-	url = https://git.overleaf.com/5d077b317860d5078bca102b
 [submodule "src/environments"]
 	path = src/environments
 	url = git@github.com:alexandroid000/environments.git
