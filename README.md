@@ -10,16 +10,12 @@ polygons, and strategy generation for mobile "bouncing" robots.
    git clone --recurse-submodules https://github.com/alexandroid000/bounce_viz.git
    ```
 
-2. Make sure you have Python
-
-3. Install python library dependencies
+2. Install python library dependencies
 
    ```bash
-   pip3 install -r requirements.txt
+   uv sync
    ```
-    requirements.txt is a file in the root directory of this project. You can
-    also use this list to install manually or convert to the python package manager
-    of your choice.
+   or use `requirements.txt` for legacy python environment managers.
 
 ## Quick Start
 

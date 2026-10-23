@@ -7,6 +7,7 @@ authors = [
     { name = "Alli Nilles", email = "anilles137@gmail.com" }
 ]
 requires-python = ">=3.11"
+package = false
 dependencies = [
     "colorful>=0.5.8",
     "cyaron>=0.7.0",
